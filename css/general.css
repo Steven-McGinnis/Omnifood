@@ -30,7 +30,7 @@
   - Shades:#cf711f
   - Accents:
   - Greys:
-  #888
+  #6f6f6f (ligtest gray allowd on #fdf2e9)
   #555
   #333
 
@@ -91,6 +91,10 @@ body {
   margin-right: 1.6rem !important;
 }
 
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
 .grid {
   display: grid;
   row-gap: 9.6rem;
@@ -111,6 +115,10 @@ body {
 
 .grid--center-v {
   align-items: center;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .heading-primary,
@@ -185,6 +193,22 @@ body {
   background-color: #fdf2e9;
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 0.2rem;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
 }
 
 strong {
