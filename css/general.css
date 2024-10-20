@@ -27,7 +27,9 @@
   #fdf2e9
   #fae5d3
 
-  - Shades:#cf711f
+  - Shades:
+  #cf711f
+  #45260a
   - Accents:
   - Greys:
   #6f6f6f (ligtest gray allowd on #fdf2e9)
@@ -35,7 +37,7 @@
   #333
 
   --- 05 Shadow System ---
-
+  0 2.4rem 4.8rem rgba(0, 0, 0, 0.75);
 
   --- 06 Border System ---
     Default: 9px
@@ -161,6 +163,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:visited,
 .btn:link {
   display: inline-block;
@@ -171,6 +174,10 @@ body {
   border-radius: 9px;
   text-decoration: none;
 
+  /* Only Necessary for .btn Class */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
   /* Always put on original state */
   transition: all 0.3s;
 }
@@ -197,6 +204,18 @@ body {
   background-color: #fdf2e9;
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -237,4 +256,11 @@ strong {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 126, 34, 0.5);
 }
