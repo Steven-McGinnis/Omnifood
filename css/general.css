@@ -22,7 +22,9 @@
 
   --- 02 Color System ---
 
-  - Primary: #e67e22
+  - Primary: 
+  #e67e22
+
   - Tints: 
   #fdf2e9
   #fae5d3
@@ -30,8 +32,12 @@
   - Shades:
   #cf711f
   #45260a
+
   - Accents:
+  
   - Greys:
+  #888
+  #767676 (lightest gray allowe on #fff)
   #6f6f6f (ligtest gray allowd on #fdf2e9)
   #555
   #333
@@ -117,6 +123,10 @@ body {
 
 .grid--4--cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5--cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
